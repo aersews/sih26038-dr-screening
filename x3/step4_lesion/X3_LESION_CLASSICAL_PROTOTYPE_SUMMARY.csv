@@ -1,0 +1,5 @@
+cls,n_images,n_with_lesion,dice_mean_lesion_images,comp_recall_mean_lesion_images,comp_precision_mean_lesion_images,not_attempted_classically
+EX,27,26,0.1246,0.7963,0.1282,False
+HE,27,27,0.0764,0.7963,0.0373,False
+MA,27,27,0.0,0.0,0.0,True
+SE,27,14,0.0,0.0,0.0,True

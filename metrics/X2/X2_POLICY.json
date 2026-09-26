@@ -1,0 +1,21 @@
+{
+  "candidate": "X1C2",
+  "operating_point": "argmax",
+  "temperature": 1.25,
+  "rules": [
+    "if quality < 0.35 -> RECAPTURE",
+    "elif referable probability (X1C2 argmax >= 2) -> REFER (human review / referral)",
+    "elif predicted class == Mild NPDR (argmax = 1) -> HUMAN_REVIEW (referable-boundary safety guard)",
+    "elif quality < 0.60 -> HUMAN_REVIEW",
+    "elif confidence < 0.90 or normalized_entropy > 0.50 -> HUMAN_REVIEW",
+    "else -> SCREENING_OUTPUT (non-referable + usable + confident)"
+  ],
+  "constants": {
+    "Q_RECAPTURE": 0.35,
+    "Q_USABLE": 0.6,
+    "CONF_HIGH": 0.9,
+    "UNC_HIGH": 0.5
+  },
+  "fit_split": "validation_only",
+  "test_locked": true
+}

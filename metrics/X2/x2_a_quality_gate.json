@@ -1,0 +1,85 @@
+{
+  "cache_consistency_check": {
+    "image": "../data/aptos/train_images/000c1434d8d7.png",
+    "cache_quality": 0.6390849840695467,
+    "recomputed_quality": 0.6390849840695467
+  },
+  "train": {
+    "n": 2197,
+    "quality_mean": 0.6521,
+    "quality_std": 0.1054,
+    "recapture_fraction": 0.0,
+    "low_quality_review_fraction": 0.1857,
+    "usable_fraction": 0.8143,
+    "referable_count": 892,
+    "referable_in_recapture_candidate": 0,
+    "referable_in_recapture_fraction": 0.0
+  },
+  "validation": {
+    "n": 733,
+    "quality_mean": 0.6747,
+    "quality_std": 0.0857,
+    "recapture_fraction": 0.0,
+    "low_quality_review_fraction": 0.1078,
+    "usable_fraction": 0.8922,
+    "referable_count": 298,
+    "referable_in_recapture_candidate": 0,
+    "referable_in_recapture_fraction": 0.0
+  },
+  "test": {
+    "n": 732,
+    "quality_mean": 0.6827,
+    "quality_std": 0.0798,
+    "recapture_fraction": 0.0,
+    "low_quality_review_fraction": 0.0847,
+    "usable_fraction": 0.9153,
+    "referable_count": 297,
+    "referable_in_recapture_candidate": 0,
+    "referable_in_recapture_fraction": 0.0
+  },
+  "examples_good_quality": {
+    "id_code": "0083ee8054ee",
+    "quality_score": 0.6783,
+    "components": {
+      "sharpness": 0.3371,
+      "exposure": 0.7551,
+      "fov_coverage": 0.7553,
+      "illumination_uniformity": 0.7186,
+      "directional_motion_blur_proxy": 0.9881
+    },
+    "gate_decision": "ACCEPT",
+    "bucket": "USABLE_FOR_MODEL",
+    "true_grade": 4,
+    "image_saved": "plots/X2/x2_gate_example_0083ee8054ee.png"
+  },
+  "examples_poor_quality": {
+    "id_code": "9b4fc15df3c8",
+    "quality_score": 0.429,
+    "components": {
+      "sharpness": 0.3623,
+      "exposure": 0.4738,
+      "fov_coverage": 0.474,
+      "illumination_uniformity": 0.0,
+      "directional_motion_blur_proxy": 0.9925
+    },
+    "gate_decision": "HUMAN_REVIEW",
+    "bucket": "LOW_QUALITY_REVIEW",
+    "true_grade": 0,
+    "image_saved": "plots/X2/x2_gate_example_9b4fc15df3c8.png"
+  },
+  "examples_lowreview_quality": {
+    "id_code": "0151781fe50b",
+    "quality_score": 0.4315,
+    "components": {
+      "sharpness": 0.3776,
+      "exposure": 0.4748,
+      "fov_coverage": 0.4749,
+      "illumination_uniformity": 0.0,
+      "directional_motion_blur_proxy": 0.9811
+    },
+    "gate_decision": "HUMAN_REVIEW",
+    "bucket": "LOW_QUALITY_REVIEW",
+    "true_grade": 0,
+    "image_saved": "plots/X2/x2_gate_example_0151781fe50b.png"
+  }
+}

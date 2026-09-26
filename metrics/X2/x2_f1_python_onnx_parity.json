@@ -1,0 +1,109 @@
+{
+  "scope": "X1C2 torch(python,float32) vs onnxruntime(CPU), 4 validation images, opset 17",
+  "onnx_path": "matlab/X2/dr_x1c2.onnx",
+  "cases": [
+    {
+      "id_code": "0083ee8054ee",
+      "true_label": 4,
+      "torch_cls_logits": [
+        -2.621142,
+        -0.32931,
+        1.056789,
+        0.23236,
+        1.431414
+      ],
+      "onnx_cls_logits": [
+        -2.621142,
+        -0.329309,
+        1.056788,
+        0.232366,
+        1.431411
+      ],
+      "torch_ref_logit": 2.977711,
+      "onnx_ref_logit": 2.97771,
+      "max_abs_diff_cls": 5.409121513366699e-06,
+      "max_abs_diff_ref": 9.5367431640625e-07,
+      "torch_pred_severity": 4,
+      "onnx_pred_severity": 4,
+      "semantic_agreement": true
+    },
+    {
+      "id_code": "0304bedad8fe",
+      "true_label": 0,
+      "torch_cls_logits": [
+        8.686013,
+        1.210882,
+        -3.721865,
+        -6.424442,
+        -5.506311
+      ],
+      "onnx_cls_logits": [
+        8.686016,
+        1.210883,
+        -3.721868,
+        -6.424444,
+        -5.506313
+      ],
+      "torch_ref_logit": -10.422661,
+      "onnx_ref_logit": -10.422665,
+      "max_abs_diff_cls": 2.86102294921875e-06,
+      "max_abs_diff_ref": 3.814697265625e-06,
+      "torch_pred_severity": 0,
+      "onnx_pred_severity": 0,
+      "semantic_agreement": true
+    },
+    {
+      "id_code": "9b4fc15df3c8",
+      "true_label": 0,
+      "torch_cls_logits": [
+        9.912989,
+        -1.867309,
+        -2.684944,
+        -5.011471,
+        -4.750243
+      ],
+      "onnx_cls_logits": [
+        9.912996,
+        -1.867306,
+        -2.684945,
+        -5.011479,
+        -4.750249
+      ],
+      "torch_ref_logit": -9.220341,
+      "onnx_ref_logit": -9.220346,
+      "max_abs_diff_cls": 8.106231689453125e-06,
+      "max_abs_diff_ref": 5.7220458984375e-06,
+      "torch_pred_severity": 0,
+      "onnx_pred_severity": 0,
+      "semantic_agreement": true
+    },
+    {
+      "id_code": "054b1b305160",
+      "true_label": 0,
+      "torch_cls_logits": [
+        1.408804,
+        0.590936,
+        1.19398,
+        -3.299034,
+        -2.738565
+      ],
+      "onnx_cls_logits": [
+        1.408805,
+        0.590937,
+        1.193979,
+        -3.299033,
+        -2.738565
+      ],
+      "torch_ref_logit": -1.537052,
+      "onnx_ref_logit": -1.537054,
+      "max_abs_diff_cls": 1.0728836059570312e-06,
+      "max_abs_diff_ref": 1.7881393432617188e-06,
+      "torch_pred_severity": 0,
+      "onnx_pred_severity": 0,
+      "semantic_agreement": true
+    }
+  ],
+  "max_abs_diff_cls_overall": 8.106231689453125e-06,
+  "max_abs_diff_ref_overall": 5.7220458984375e-06,
+  "all_semantic_agreement": true
+}

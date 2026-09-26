@@ -1,0 +1,40 @@
+{
+  "candidate": "X1C2",
+  "architecture": "DROrdinalRefNet",
+  "backbone": "efficientnet_b3",
+  "backbone_params": {"pretrained": true, "avg_pool": true, "in_features": 1536},
+  "num_classes": 5,
+  "frame": {
+    "cls_head": 5,
+    "ord_head": 4,
+    "ref_head": 1,
+    "dropout": 0.35,
+    "classifier_frame": "shared backbone -> dropout -> parallel heads; ref_prob = sum(P(cls>=2)); default = argmax(referable if any class>=2 predicted)"
+  },
+  "parameter_count": 10711602,
+  "input": {"size": 300, "resize": "INTER_AREA"},
+  "preprocessing": "fundus crop -> CLAHE -> ToTensor -> Normalize(0.485,0.456,0.406)",
+  "augmentation": "HFlip(p=0.5) + Rotate(10) + ColorJitter(0.08,0.08,0.05) [v8.12 contract]",
+  "loss": {
+    "type": "severity_emphasized_multihead",
+    "class_weights": [0.6369653353298114, 1.4068686076813568, 0.8557647651856982, 2.3456453640550703, 2.048267836476349],
+    "cls_weight": 1.0,
+    "ordinal_weight": 0.5,
+    "ordinal_pos": [0.9721723518850988, 1.4630044843049328, 6.523972602739726, 10.0],
+    "ref_weight": 0.6,
+    "ref_pos": [1.4630044843049328],
+    "weight_clip": [0.5, 5.0]
+  },
+  "optimizer": {"type": "AdamW", "lr": 0.0002, "weight_decay": 0.0001},
+  "scheduler": {"type": "CosineAnnealingLR", "T_max": 20},
+  "training": {"batch": 8, "epochs": 20, "patience": 5, "amp": true, "seed": 42, "best_epoch": 3, "early_stop_epoch": 8, "elapsed_s": 3812.4},
+  "selection": "best validation QWK",
+  "calibration": {"method": "temperature scaling (validation only)", "temperature": 1.25},
+  "deployment_operating_point": {
+    "primary_recommended": "argmax referable decision (v8.12 reporting convention)",
+    "frozen_max_spec_threshold": 0.6443473697,
+    "note": "frozen max-spec threshold over-tightened sensitivity on locked-test transfer (0.862); argmax is used for X1 acceptance / SIH target comparison"
+  },
+  "split_fingerprint": "d6934df52f526795",
+  "ckpt": "checkpoints/X1/dr_x1c2_best_X1C2.pt"
+}

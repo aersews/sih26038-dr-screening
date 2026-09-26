@@ -1,0 +1,32 @@
+{
+  "algorithm": "sha256",
+  "digest_length": 64,
+  "path_convention": "repository-relative POSIX path from the repository root",
+  "text_normalization": "text artifacts are hashed after CRLF->LF normalization, matching the committed blob; binary assets are hashed as raw bytes",
+  "generated_on": "2026-09-26",
+  "note": "Digests of the X1 artifacts as committed. The checkpoint is a GitHub Release asset and is listed under release_assets_not_in_git.",
+  "git_tracked_files": {
+    "experiments/X1/X1_BASELINE_COMPARISON.csv": "530b31ff5d412383c8ebcb0800c770433688836ae3ac8063a0273618dc65bd4a",
+    "experiments/X1/X1_MODEL_CONFIG.json": "714b4c0621682bcafe10017fc676021797975c7d75baba44b87e6313d8586c17",
+    "experiments/X1/X1_RESULTS.json": "e9b303144be57f379079fe8a978de1d39688591e85456280ee997fbd1196cf56",
+    "experiments/X1/X1_RESULTS.md": "b5268725aa8cc1448954637e035ce126d99c1f56f25909c7762a4a3004467dcf",
+    "experiments/X1/x1_common.py": "08ef1b680d580513ebaa9113b8c28624f39f0d2d97b0d1de166c19d97dbd6d23",
+    "experiments/X1/x1_step1_baseline.py": "e96de6f4f4b6a3ed82ab0c2a8a1edace39113e41043c537c4fabf8d34f0b6edb",
+    "experiments/X1/x1_step2_train.py": "f789edf273c7e43162cea8f0eadeb45f1e8bb1e3bf09230da35ba0428b6c3ca2",
+    "experiments/X1/x1_step34_eval.py": "6ca6a4be3894b54745f11411a0a7e120af74963f308d565bbd650e4016306dc1",
+    "experiments/X1/x1_step34_robustness.py": "831ceffd32b7a1b4e9f68179fa16253667a495048c4ec1c496264461a9814313",
+    "metrics/X1/x1_baseline_validation_v8_12.json": "b55d208f8057d0bb00902fad49895717fead5b502aea61dcd14708c31aabcb71",
+    "metrics/X1/x1_calibration.json": "1cf2fa62cbed97c42163e182cf4b99b6ff9bcaec0c7263e3ddbfb35fd245a2a8",
+    "metrics/X1/x1_locked_test_report.json": "07a253cb112746cc98f3e24f6074f0e057cedcab830c75cc85fd392723c46d60",
+    "metrics/X1/x1_model_config.json": "21fd2e50cf24bfc4378d4edf549ab39e9fc46fd1e233086107b245580d80949f",
+    "metrics/X1/x1_operating_point.json": "c1f8138402164e202e1a225fcc0d412bf7908088441feed16d23b7c1b2d66382",
+    "metrics/X1/x1_robustness_locked_test.csv": "4c5ce5e7dea77e1c0d38e9f580bafbaefcc4d0492798c77c4aefd1a0de43e968",
+    "metrics/X1/x1_training_history.csv": "4497556473dc73a2e051b03c42738b331bda5b7846e596d44ed372945130f270",
+    "plots/X1/X1_CONFUSION_MATRIX.png": "66f48b6b621f444a743504edb73d905678fccdfd2705a0fa11e570f99f56ee15",
+    "plots/X1/X1_VALIDATION_PR.png": "23ba7c548870e6d7951b99101a8e76c8e9413b891e6d4711fa071b6bf8b14703",
+    "plots/X1/X1_VALIDATION_ROC.png": "74b00fb3697f93833f3d8552683bb3127957e9115320edc933277828fd31df28"
+  },
+  "release_assets_not_in_git": {
+    "checkpoints/X1/dr_x1c2_best_X1C2.pt": "73522dbbe7f476aeb26161b81a0b052236d2261de3222757e2e23951aac6aab4"
+  }
+}

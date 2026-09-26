@@ -1,0 +1,138 @@
+[
+ {
+  "case": 1,
+  "name": "non_referable_good_quality",
+  "id_code": "0304bedad8fe",
+  "true_grade": 0,
+  "true_grade_name": "No DR",
+  "predicted_grade": 0,
+  "predicted_grade_name": "No DR",
+  "route": "SCREENING_OUTPUT",
+  "route_reason": "non-referable + usable + confident (conf 0.997)",
+  "quality_score": 0.7184,
+  "quality_components": {
+   "sharpness": 0.4891,
+   "exposure": 0.7897,
+   "fov_coverage": 0.7911,
+   "illumination_uniformity": 0.693,
+   "directional_motion_blur_proxy": 0.9421
+  },
+  "gate_decision": "ACCEPT",
+  "class_probs": {
+   "No DR": 0.9974,
+   "Mild NPDR": 0.0025,
+   "Moderate NPDR": 0.0,
+   "Severe NPDR": 0.0,
+   "Proliferative DR": 0.0
+  },
+  "referable_probability": 0.0001,
+  "confidence": 0.9974,
+  "normalized_uncertainty": 0.0114,
+  "gradcam_method": "Grad-CAM on referable logit (backbone.conv_head), relu-weighted GAP",
+  "gradcam_target_layer": "backbone.conv_head",
+  "image": "explainability/X2/X2_EXPLAINABILITY_CASES/case1_non_referable_good_quality.png",
+  "lesion_overlay": "NOT available: APTOS has no lesion masks; Grad-CAM shows classifier attention only (not lesion annotation). No fabricated lesion overlays."
+ },
+ {
+  "case": 2,
+  "name": "referable_good_quality",
+  "id_code": "0083ee8054ee",
+  "true_grade": 4,
+  "true_grade_name": "Proliferative DR",
+  "predicted_grade": 4,
+  "predicted_grade_name": "Proliferative DR",
+  "route": "REFER",
+  "route_reason": "referable (X1C2 argmax>=2); ref_prob 0.882",
+  "quality_score": 0.6783,
+  "quality_components": {
+   "sharpness": 0.3371,
+   "exposure": 0.7551,
+   "fov_coverage": 0.7553,
+   "illumination_uniformity": 0.7186,
+   "directional_motion_blur_proxy": 0.9881
+  },
+  "gate_decision": "ACCEPT",
+  "class_probs": {
+   "No DR": 0.0163,
+   "Mild NPDR": 0.1016,
+   "Moderate NPDR": 0.3071,
+   "Severe NPDR": 0.1594,
+   "Proliferative DR": 0.4157
+  },
+  "referable_probability": 0.8822,
+  "confidence": 0.4157,
+  "normalized_uncertainty": 0.8198,
+  "gradcam_method": "Grad-CAM on referable logit (backbone.conv_head), relu-weighted GAP",
+  "gradcam_target_layer": "backbone.conv_head",
+  "image": "explainability/X2/X2_EXPLAINABILITY_CASES/case2_referable_good_quality.png",
+  "lesion_overlay": "NOT available: APTOS has no lesion masks; Grad-CAM shows classifier attention only (not lesion annotation). No fabricated lesion overlays."
+ },
+ {
+  "case": 3,
+  "name": "low_quality_review",
+  "id_code": "9b4fc15df3c8",
+  "true_grade": 0,
+  "true_grade_name": "No DR",
+  "predicted_grade": 0,
+  "predicted_grade_name": "No DR",
+  "route": "HUMAN_REVIEW",
+  "route_reason": "quality 0.429 in [0.35, 0.60)",
+  "quality_score": 0.429,
+  "quality_components": {
+   "sharpness": 0.3623,
+   "exposure": 0.4738,
+   "fov_coverage": 0.474,
+   "illumination_uniformity": 0.0,
+   "directional_motion_blur_proxy": 0.9925
+  },
+  "gate_decision": "HUMAN_REVIEW",
+  "class_probs": {
+   "No DR": 0.9999,
+   "Mild NPDR": 0.0001,
+   "Moderate NPDR": 0.0,
+   "Severe NPDR": 0.0,
+   "Proliferative DR": 0.0
+  },
+  "referable_probability": 0.0001,
+  "confidence": 0.9999,
+  "normalized_uncertainty": 0.0009,
+  "gradcam_method": "Grad-CAM on referable logit (backbone.conv_head), relu-weighted GAP",
+  "gradcam_target_layer": "backbone.conv_head",
+  "image": "explainability/X2/X2_EXPLAINABILITY_CASES/case3_low_quality_review.png",
+  "lesion_overlay": "NOT available: APTOS has no lesion masks; Grad-CAM shows classifier attention only (not lesion annotation). No fabricated lesion overlays."
+ },
+ {
+  "case": 4,
+  "name": "uncertain_review",
+  "id_code": "054b1b305160",
+  "true_grade": 0,
+  "true_grade_name": "No DR",
+  "predicted_grade": 0,
+  "predicted_grade_name": "No DR",
+  "route": "HUMAN_REVIEW",
+  "route_reason": "low confidence 0.412 / high uncertainty 0.727",
+  "quality_score": 0.7275,
+  "quality_components": {
+   "sharpness": 0.4815,
+   "exposure": 0.7901,
+   "fov_coverage": 0.7923,
+   "illumination_uniformity": 0.7416,
+   "directional_motion_blur_proxy": 0.9487
+  },
+  "gate_decision": "ACCEPT",
+  "class_probs": {
+   "No DR": 0.4118,
+   "Mild NPDR": 0.2152,
+   "Moderate NPDR": 0.3485,
+   "Severe NPDR": 0.0096,
+   "Proliferative DR": 0.015
+  },
+  "referable_probability": 0.373,
+  "confidence": 0.4118,
+  "normalized_uncertainty": 0.7274,
+  "gradcam_method": "Grad-CAM on referable logit (backbone.conv_head), relu-weighted GAP",
+  "gradcam_target_layer": "backbone.conv_head",
+  "image": "explainability/X2/X2_EXPLAINABILITY_CASES/case4_uncertain_review.png",
+  "lesion_overlay": "NOT available: APTOS has no lesion masks; Grad-CAM shows classifier attention only (not lesion annotation). No fabricated lesion overlays."
+ }
+]

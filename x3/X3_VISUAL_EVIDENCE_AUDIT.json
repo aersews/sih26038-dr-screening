@@ -1,0 +1,247 @@
+{
+ "phase": "x3_step2_visual_evidence_audit",
+ "version": "v9_0",
+ "audited_on": "24-Sep-2026",
+ "total": 34,
+ "by_category": {},
+ "items": [
+  {
+   "category": "1_fundus_image",
+   "item": "APTOS train_images (png)",
+   "abspath": "../data/aptos/train_images",
+   "exists": true,
+   "detail": "3662 png files under data/aptos/train_images"
+  },
+  {
+   "category": "1_fundus_image",
+   "item": "source 0083ee8054ee.png",
+   "abspath": "../data/aptos/train_images/0083ee8054ee.png",
+   "exists": true,
+   "detail": "dims=3388x2588"
+  },
+  {
+   "category": "1_fundus_image",
+   "item": "source 0304bedad8fe.png",
+   "abspath": "../data/aptos/train_images/0304bedad8fe.png",
+   "exists": true,
+   "detail": "dims=1050x1050"
+  },
+  {
+   "category": "1_fundus_image",
+   "item": "source 9b4fc15df3c8.png",
+   "abspath": "../data/aptos/train_images/9b4fc15df3c8.png",
+   "exists": true,
+   "detail": "dims=819x614"
+  },
+  {
+   "category": "1_fundus_image",
+   "item": "source 054b1b305160.png",
+   "abspath": "../data/aptos/train_images/054b1b305160.png",
+   "exists": true,
+   "detail": "dims=1050x1050"
+  },
+  {
+   "category": "2_quality_gate",
+   "item": "x2_a_quality_gate.json",
+   "abspath": "metrics/X2/x2_a_quality_gate.json",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "2_quality_gate",
+   "item": "quality gate content",
+   "abspath": "metrics/X2/x2_a_quality_gate.json",
+   "exists": true,
+   "detail": "keys=['cache_consistency_check', 'train', 'validation', 'test', 'examples_good_quality', 'examples_poor_quality']"
+  },
+  {
+   "category": "3_dr_prediction",
+   "item": "x1_locked_test_report.json",
+   "abspath": "metrics/X1/x1_locked_test_report.json",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "3_dr_prediction",
+   "item": "x2_final_locked_test.json",
+   "abspath": "metrics/X2/x2_final_locked_test.json",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "4_gradcam",
+   "item": "case1_non_referable_good_quality.png",
+   "abspath": "explainability/X2/X2_EXPLAINABILITY_CASES/case1_non_referable_good_quality.png",
+   "exists": true,
+   "detail": "dims=3120x845, 1568.5KB"
+  },
+  {
+   "category": "4_gradcam",
+   "item": "case2_referable_good_quality.png",
+   "abspath": "explainability/X2/X2_EXPLAINABILITY_CASES/case2_referable_good_quality.png",
+   "exists": true,
+   "detail": "dims=3120x845, 1352.0KB"
+  },
+  {
+   "category": "4_gradcam",
+   "item": "case3_low_quality_review.png",
+   "abspath": "explainability/X2/X2_EXPLAINABILITY_CASES/case3_low_quality_review.png",
+   "exists": true,
+   "detail": "dims=3120x845, 998.9KB"
+  },
+  {
+   "category": "4_gradcam",
+   "item": "case4_uncertain_review.png",
+   "abspath": "explainability/X2/X2_EXPLAINABILITY_CASES/case4_uncertain_review.png",
+   "exists": true,
+   "detail": "dims=3120x845, 1512.4KB"
+  },
+  {
+   "category": "5_overlay",
+   "item": "X2_EXPLAINABILITY_CASES.json",
+   "abspath": "explainability/X2/X2_EXPLAINABILITY_CASES/X2_EXPLAINABILITY_CASES.json",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "6_report",
+   "item": "report_low_quality_review.txt",
+   "abspath": "reports/X2/X2_REPORT_EXAMPLES/report_low_quality_review.txt",
+   "exists": true,
+   "detail": "25 lines"
+  },
+  {
+   "category": "6_report",
+   "item": "report_non_referable_good_quality.txt",
+   "abspath": "reports/X2/X2_REPORT_EXAMPLES/report_non_referable_good_quality.txt",
+   "exists": true,
+   "detail": "26 lines"
+  },
+  {
+   "category": "6_report",
+   "item": "report_referable_good_quality.txt",
+   "abspath": "reports/X2/X2_REPORT_EXAMPLES/report_referable_good_quality.txt",
+   "exists": true,
+   "detail": "25 lines"
+  },
+  {
+   "category": "6_report",
+   "item": "report_uncertain_review.txt",
+   "abspath": "reports/X2/X2_REPORT_EXAMPLES/report_uncertain_review.txt",
+   "exists": true,
+   "detail": "25 lines"
+  },
+  {
+   "category": "7_matlab_inference",
+   "item": "x2_f_matlab_onnx_parity.json",
+   "abspath": "matlab/X2/results/x2_f_matlab_onnx_parity.json",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "7_matlab_inference",
+   "item": "x2_f_matlab_screening.json",
+   "abspath": "matlab/X2/results/x2_f_matlab_screening.json",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "8_simulink_model",
+   "item": "sih26038_screening_workflow_v9_0.slx",
+   "abspath": "matlab/X2/sih26038_screening_workflow_v9_0.slx",
+   "exists": true,
+   "detail": "86.0KB"
+  },
+  {
+   "category": "9_capacity_sim",
+   "item": "X2_SIMULINK_SCENARIOS.csv",
+   "abspath": "matlab/X2/results/X2_SIMULINK_SCENARIOS.csv",
+   "exists": true,
+   "detail": "3 data rows"
+  },
+  {
+   "category": "10_idrid_gt",
+   "item": "Fovea training CSV",
+   "abspath": "../data/idrid/C. Localization/2. Groundtruths/2. Fovea Center Location/IDRiD_Fovea_Center_Training Set_Markups.csv",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "10_idrid_gt",
+   "item": "Fovea testing CSV",
+   "abspath": "../data/idrid/C. Localization/2. Groundtruths/2. Fovea Center Location/IDRiD_Fovea_Center_Testing Set_Markups.csv",
+   "exists": true,
+   "detail": "exists"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "train MA",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/a. Training Set/1. Microaneurysms",
+   "exists": true,
+   "detail": "54 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "train HE",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/a. Training Set/2. Haemorrhages",
+   "exists": true,
+   "detail": "53 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "train EX",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/a. Training Set/3. Hard Exudates",
+   "exists": true,
+   "detail": "54 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "train SE",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/a. Training Set/4. Soft Exudates",
+   "exists": true,
+   "detail": "26 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "train OD",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/a. Training Set/5. Optic Disc",
+   "exists": true,
+   "detail": "54 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "test MA",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/b. Testing Set/1. Microaneurysms",
+   "exists": true,
+   "detail": "27 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "test HE",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/b. Testing Set/2. Haemorrhages",
+   "exists": true,
+   "detail": "27 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "test EX",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/b. Testing Set/3. Hard Exudates",
+   "exists": true,
+   "detail": "27 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "test SE",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/b. Testing Set/4. Soft Exudates",
+   "exists": true,
+   "detail": "14 masks"
+  },
+  {
+   "category": "11_lesion_masks",
+   "item": "test OD",
+   "abspath": "../data/idrid/A. Segmentation/2. All Segmentation Groundtruths/b. Testing Set/5. Optic Disc",
+   "exists": true,
+   "detail": "27 masks"
+  }
+ ]
+}

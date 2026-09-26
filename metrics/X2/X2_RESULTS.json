@@ -1,0 +1,214 @@
+{
+  "title": "X2 Workflow-Aware Screening Integration (v9.0)",
+  "version": "9.0.X2",
+  "base_model": "X1C2 (efficientnet-b3, PyTorch-trained, accepted as v9.0 baseline)",
+  "locked_test_firewall": "single locked-test evaluation performed exactly once at end (x2_final_locked_test.json)",
+  "generated": "2026-09-24T06:32:40.958910+00:00",
+  "operating_point": "argmax with frozen temperature T=1.25; max-specificity threshold 0.6443 intentionally NOT deployed",
+  "summary": {
+    "locked_test_qwk": 0.9026514473825455,
+    "locked_test_ref_sens": 0.9191919191919192,
+    "locked_test_ref_spec": 0.9333333333333333,
+    "locked_test_ref_auc": 0.9791787607879563,
+    "workflow_missed_referable": 0,
+    "workflow_route_counts": {
+      "RECAPTURE": 0,
+      "HUMAN_REVIEW": 161,
+      "SCREENING_OUTPUT": 269,
+      "REFER": 302
+    }
+  },
+  "phase_results": {
+    "x2_a_quality_gate": {},
+    "x2_b_c_policy_validation": {},
+    "x2_c_operating_point": {
+      "use_argmax_prob": true,
+      "temperature": 1.25,
+      "max_spec_threshold_not_used": true
+    },
+    "x2_d_explainability": {
+      "case_count": 4
+    },
+    "x2_e_reports": {
+      "count": 4,
+      "label": "AI-assisted screening report (not a diagnostic report)"
+    },
+    "x2_f_matlab_onnx": {
+      "python_onnx_max_abs_diff_cls": 8.106231689453125e-06,
+      "python_onnx_max_abs_diff_ref": 5.7220458984375e-06,
+      "matlab_onnx_max_abs_diff_cls": 6.67572e-06,
+      "matlab_onnx_max_abs_diff_ref": 3.81469727e-06,
+      "matlab_parity_pass": true,
+      "matlab_screening_routes_match_python": true,
+      "matlab_screening_pass": true,
+      "training_claim": "PyTorch-trained X1C2 integrated into MATLAB via ONNX; NOT MATLAB-trained"
+    },
+    "x2_g_simulink": {
+      "pass": true,
+      "scenarios": [
+        {
+          "scenario": "LOW",
+          "acquisition_rate_hr": 5,
+          "auto_screen_fraction": 0.3356,
+          "human_review_fraction": 0.2401,
+          "refer_fraction": 0.4243,
+          "recapture_fraction": 0,
+          "steps": 1441,
+          "simulation_hours": 24,
+          "step_seconds": 60,
+          "total_arrivals": 120.08333333333333,
+          "total_auto_screened": 40.29996666666657,
+          "total_mid_reviewed": 28.83200833333319,
+          "total_referred_and_reviewed": 50.95135833333296,
+          "total_recaptured": 0,
+          "total_human_attention": 79.78336666666678,
+          "mean_human_queue": 0,
+          "max_human_queue": 0,
+          "p95_human_queue": 0,
+          "end_human_queue": 0,
+          "queue_drained_at_24h": true,
+          "utilization_vs_capacity": 0.028907016908212603,
+          "annualized_100k_mean_rate_hr": 50,
+          "annualized_demand_human_hr": 33.22,
+          "annualized_demand_auto_hr": 16.78,
+          "annualized_human_capacity_hr": 115,
+          "annualized_hr_margin": 81.78,
+          "annualized_max_sustainable_yr": 346177.0018061409,
+          "annualized_100k_feasible": true
+        },
+        {
+          "scenario": "BASE",
+          "acquisition_rate_hr": 10,
+          "auto_screen_fraction": 0.3356,
+          "human_review_fraction": 0.2401,
+          "refer_fraction": 0.4243,
+          "recapture_fraction": 0,
+          "steps": 1441,
+          "simulation_hours": 24,
+          "step_seconds": 60,
+          "total_arrivals": 240.16666666666666,
+          "total_auto_screened": 80.59993333333314,
+          "total_mid_reviewed": 57.66401666666638,
+          "total_referred_and_reviewed": 101.90271666666592,
+          "total_recaptured": 0,
+          "total_human_attention": 159.56673333333356,
+          "mean_human_queue": 0,
+          "max_human_queue": 0,
+          "p95_human_queue": 0,
+          "end_human_queue": 0,
+          "queue_drained_at_24h": true,
+          "utilization_vs_capacity": 0.057814033816425206,
+          "annualized_100k_mean_rate_hr": 50,
+          "annualized_demand_human_hr": 33.22,
+          "annualized_demand_auto_hr": 16.78,
+          "annualized_human_capacity_hr": 115,
+          "annualized_hr_margin": 81.78,
+          "annualized_max_sustainable_yr": 346177.0018061409,
+          "annualized_100k_feasible": true
+        },
+        {
+          "scenario": "HIGH",
+          "acquisition_rate_hr": 40,
+          "auto_screen_fraction": 0.3356,
+          "human_review_fraction": 0.2401,
+          "refer_fraction": 0.4243,
+          "recapture_fraction": 0,
+          "steps": 1441,
+          "simulation_hours": 24,
+          "step_seconds": 60,
+          "total_arrivals": 960.6666666666666,
+          "total_auto_screened": 322.39973333333256,
+          "total_mid_reviewed": 230.6560666666655,
+          "total_referred_and_reviewed": 407.6108666666637,
+          "total_recaptured": 0,
+          "total_human_attention": 638.2669333333342,
+          "mean_human_queue": 0,
+          "max_human_queue": 0,
+          "p95_human_queue": 0,
+          "end_human_queue": 0,
+          "queue_drained_at_24h": true,
+          "utilization_vs_capacity": 0.23125613526570082,
+          "annualized_100k_mean_rate_hr": 50,
+          "annualized_demand_human_hr": 33.22,
+          "annualized_demand_auto_hr": 16.78,
+          "annualized_human_capacity_hr": 115,
+          "annualized_hr_margin": 81.78,
+          "annualized_max_sustainable_yr": 346177.0018061409,
+          "annualized_100k_feasible": true
+        }
+      ]
+    },
+    "x2_h_ablation": {
+      "classifier_level_constant": {
+        "classifier": "X1C2 argmax (frozen; identical across arms)",
+        "referable_sensitivity": 0.9329,
+        "referable_specificity": 0.9241,
+        "qwk": 0.9037
+      },
+      "arms": [
+        {
+          "arm": "A_X1C2_only",
+          "components": "X1C2 argmax",
+          "auto_screen_fraction": 0.5757,
+          "human_attention_fraction": 0.4243,
+          "human_review_fraction": 0.0,
+          "recapture_fraction": 0.0,
+          "refer_fraction": 0.4243,
+          "missed_referable_not_routed_to_human": 20,
+          "missed_referable_fraction": 0.0671,
+          "safety_sensitivity": 0.9329
+        },
+        {
+          "arm": "B_X1C2_quality_gate",
+          "components": "X1C2 argmax + quality gate (q<0.60)",
+          "auto_screen_fraction": 0.4802,
+          "human_attention_fraction": 0.5198,
+          "human_review_fraction": 0.5198,
+          "recapture_fraction": 0.1078,
+          "refer_fraction": 0.4243,
+          "missed_referable_not_routed_to_human": 20,
+          "missed_referable_fraction": 0.0671,
+          "safety_sensitivity": 0.9329
+        },
+        {
+          "arm": "C_X1C2_workflow",
+          "components": "X1C2 argmax + workflow routing (refer/Mild-boundary/confidence)",
+          "auto_screen_fraction": 0.3356,
+          "human_attention_fraction": 0.6644,
+          "human_review_fraction": 0.2401,
+          "recapture_fraction": 0.0,
+          "refer_fraction": 0.4243,
+          "missed_referable_not_routed_to_human": 0,
+          "missed_referable_fraction": 0.0,
+          "safety_sensitivity": 1.0
+        },
+        {
+          "arm": "D_full_pipeline",
+          "components": "X1C2 argmax + quality gate + workflow + report/explainability artifact",
+          "auto_screen_fraction": 0.3356,
+          "human_attention_fraction": 0.6644,
+          "human_review_fraction": 0.6644,
+          "recapture_fraction": 0.0,
+          "refer_fraction": 0.4243,
+          "missed_referable_not_routed_to_human": 0,
+          "missed_referable_fraction": 0.0,
+          "safety_sensitivity": 1.0
+        }
+      ],
+      "interpretation": "D full pipeline does NOT 'outperform' the classifier at grading (identical sens/spec by construction). D converts 20 auto-screened missed-referable to 0 by routing them to human attention (Mild-boundary guard + quality gate). Cost: auto-screen fraction 0.576 -> 0.336, human-attention 0.424 -> 0.664. This is a routing/safety trade, not a grading improvement."
+    }
+  },
+  "final_report_points": {
+    "1_model": "X1C2 efficientnet-b3 (DROrdinalRefNet with ordinal+referable heads), PyTorch-trained on APTOS 3662 images",
+    "2_lock_single_shot": "QWK 0.9027, sens 0.9192, spec 0.9333, AUC 0.9792 (single frozen run)",
+    "3_no_test_tuning": "all thresholds/policy decisions made on validation only (T=1.25 frozen per X1)",
+    "4_quality_gate": "heuristic engineering quality index (sharpness/exposure/FOV/illumination/motion-proxy); APTOS contains 0 recapture candidates; low-quality review fraction val 0.1078",
+    "5_deterministic_routing": "see X2_POLICY.json",
+    "6_workflow_benefit": "workflow routes all referable cases to REFER/HUMAN_REVIEW with 0 missed referable on locked test (safety sensitivity 1.0)",
+    "7_explainability": "Grad-CAM on referable logit (backbone.conv_head); attention-only, no fabricated lesion overlays; APTOS has no lesion masks",
+    "8_matlab_integration": "X1C2 exported to ONNX (opset 17), imported via importNetworkFromONNX; parity max diff < 1e-5 cls logits; screening routes match Python exactly",
+    "9_simulink_workflow": "base-Simulink rate-based queue model (no SimEvents); LOW/BASE/HIGH 24h all queue-drained; annualized 100k feasible (demand 33.2/hr human vs 115/hr capacity)",
+    "10_ablation": "C/D workflow converts 20 missed-referable (A/B) to 0; auto-screen coverage 0.576->0.336; classier grading constant by construction (not 'improved')",
+    "11_verdict": "X2 ACCEPTED (CASE A): meets sens>0.90 & spec>0.85 at frozen argmax operating point; workflow adds safety without regression"
+  }
+}

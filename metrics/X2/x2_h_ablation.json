@@ -1,0 +1,66 @@
+{
+  "scope": {
+    "dataset": "APTOS 2019 blindness-detection",
+    "split": "validation (frozen v8.12 partition)",
+    "n": 733,
+    "locked_test_used": false,
+    "note": "Ablation is a routing-level study on validation only. The locked test was never used for ablation."
+  },
+  "classifier_level_constant": {
+    "classifier": "X1C2 argmax (frozen; identical across arms)",
+    "referable_sensitivity": 0.9329,
+    "referable_specificity": 0.9241,
+    "qwk": 0.9037
+  },
+  "arms": [
+    {
+      "arm": "A_X1C2_only",
+      "components": "X1C2 argmax",
+      "auto_screen_fraction": 0.5757,
+      "human_attention_fraction": 0.4243,
+      "human_review_fraction": 0.0,
+      "recapture_fraction": 0.0,
+      "refer_fraction": 0.4243,
+      "missed_referable_not_routed_to_human": 20,
+      "missed_referable_fraction": 0.0671,
+      "safety_sensitivity": 0.9329
+    },
+    {
+      "arm": "B_X1C2_quality_gate",
+      "components": "X1C2 argmax + quality gate (q<0.60)",
+      "auto_screen_fraction": 0.4802,
+      "human_attention_fraction": 0.5198,
+      "human_review_fraction": 0.5198,
+      "recapture_fraction": 0.1078,
+      "refer_fraction": 0.4243,
+      "missed_referable_not_routed_to_human": 20,
+      "missed_referable_fraction": 0.0671,
+      "safety_sensitivity": 0.9329
+    },
+    {
+      "arm": "C_X1C2_workflow",
+      "components": "X1C2 argmax + workflow routing (refer/Mild-boundary/confidence)",
+      "auto_screen_fraction": 0.3356,
+      "human_attention_fraction": 0.6644,
+      "human_review_fraction": 0.2401,
+      "recapture_fraction": 0.0,
+      "refer_fraction": 0.4243,
+      "missed_referable_not_routed_to_human": 0,
+      "missed_referable_fraction": 0.0,
+      "safety_sensitivity": 1.0
+    },
+    {
+      "arm": "D_full_pipeline",
+      "components": "X1C2 argmax + quality gate + workflow + report/explainability artifact",
+      "auto_screen_fraction": 0.3356,
+      "human_attention_fraction": 0.6644,
+      "human_review_fraction": 0.2401,
+      "recapture_fraction": 0.0,
+      "refer_fraction": 0.4243,
+      "missed_referable_not_routed_to_human": 0,
+      "missed_referable_fraction": 0.0,
+      "safety_sensitivity": 1.0
+    }
+  ],
+  "interpretation": "Validation-split ablation (n=733); the locked test is not used here. D full pipeline does NOT 'outperform' the classifier at grading (identical sens/spec by construction). D converts 20 auto-screened missed-referable to 0 by routing them to human attention (Mild-boundary guard + quality gate). Cost: auto-screen fraction 0.576 -> 0.336, human-attention 0.424 -> 0.664. This is a routing/safety trade, not a grading improvement."
+}

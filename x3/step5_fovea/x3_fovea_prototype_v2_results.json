@@ -1,0 +1,35 @@
+{
+ "phase": "x3_step5b_idrid_c_fovea_prototype_v2",
+ "version": "v9_0",
+ "execution_status": "EXECUTED_PROTOTYPE_EXPERIMENTAL",
+ "trained_on": "IDRiD C training n=413 official fovea centers",
+ "evaluated_on": "IDRiD C test n=103 single-shot no tuning",
+ "method": "pretrained efficientnet_b3 (timm) + linear head, input 300x300; isolated prototype",
+ "baselines": {
+  "constant_centroid_median_px": 312.64167208781134,
+  "constant_centroid_within200": 0.23300970873786409,
+  "naive_5conv_median_px": 1808.3
+ },
+ "results_native_px": {
+  "n": 103,
+  "mean": 310.43302315708195,
+  "sd": 193.07588819622086,
+  "median": 273.2500396303475,
+  "q25": 177.0773962714976,
+  "q75": 417.86856686313286,
+  "min": 34.14465301279288,
+  "max": 989.0786809529615,
+  "ci95": [
+   43.88352887173448,
+   732.67566638569
+  ]
+ },
+ "frac_within_px": {
+  "50": 0.04854368932038835,
+  "100": 0.13592233009708737,
+  "200": 0.32038834951456313
+ },
+ "scope": "PROTOTYPE experimental localizer; NOT a clinical claim; does not update DR grading evidence",
+ "model": "x3/step5_fovea/fovea_prototype_v2_v9_0.pt",
+ "executed_at": "24-Sep-2026 13:25:56"
+}

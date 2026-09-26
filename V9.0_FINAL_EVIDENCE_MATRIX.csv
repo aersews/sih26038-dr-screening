@@ -1,0 +1,19 @@
+experiment,claim,scope,evidence_file,evidence_tag,status,mode,notes
+X1,v9.0 candidate trained (X1C2),training,metrics/X1/x1_training_history.csv,EXECUTED,complete,done,best epoch 3 QWK 0.9037; early stop epoch 8
+X1,v9.0 candidate checkpoint produced,checkpoint,checkpoints/X1/dr_x1c2_best_X1C2.pt,EXECUTED,complete,done,release asset (not in Git); full SHA-256 in experiments/X1/X1_CHECKSUMS.json release_assets_not_in_git
+X1,validation metrics (X1C2),validation,metrics/X1/x1_model_config.json + X1_RESULTS.json,EXECUTED,complete,done,QWK 0.9037 / acc 0.8240 / ref AUC 0.9785 (argmax sens 0.9329 spec 0.9241)
+X1,frozen operating point selected (predeclared rule),validation,metrics/X1/x1_operating_point.json,EXECUTED,complete,done,threshold 0.6443 -> val sens 0.9027 spec 0.9425; validation-only
+X1,calibration temperature (validation-only),validation,metrics/X1/x1_calibration.json,EXECUTED,complete,done,T=1.25 Brier 0.2544
+X1,baseline v8.12 control validation,validation,metrics/X1/x1_baseline_validation_v8_12.json,EXECUTED_HONEST_NEGATIVE,complete,done,QWK 0.9078; not re-run on test (frozen final_test_report used)
+X1,locked-test single-shot evaluation (X1C2),locked_test,metrics/X1/x1_locked_test_report.json,EXECUTED,complete,done,QWK 0.9027; argmax sens 0.9192 spec 0.9333; frozen th sens 0.8620 spec 0.9517; evaluated once
+X1,SIH target met (argmax operating point),locked_test,experiments/X1/X1_RESULTS.json,EXECUTED,complete,done,sens 0.9192>0.90 & spec 0.9333>0.85 & QWK 0.9027 no regression vs 0.9008
+X1,SIH target NOT met at frozen max-spec threshold,locked_test,metrics/X1/x1_locked_test_report.json,EXECUTED_HONEST_NEGATIVE,complete,done,sens 0.8620<0.90 -> threshold over-tightened; do not deploy that cutoff
+X1,robustness on locked test,locked_test,metrics/X1/x1_robustness_locked_test.csv,EXECUTED,complete,done,QWK sev0 0.9027 / sev3 0.8670 / sev5 0.8979
+X1,comparison with v8.12 baseline,comparison,experiments/X1/X1_BASELINE_COMPARISON.csv,EXECUTED,complete,done,argmax: sens 0.9192(prev 0.8956) spec 0.9333(prev 0.9287) QWK 0.9027(prev 0.9008)
+X1,validation ROC/PR/confusion plots,plots,plots/X1/X1_VALIDATION_ROC.png,EXECUTED,complete,done,plus PR + confusion matrix png
+X1,artifact integrity (sha256),integrity,experiments/X1/X1_CHECKSUMS.json,EXECUTED,complete,done,full 64-hex SHA-256 over git-tracked X1 artifacts; release checkpoint under release_assets_not_in_git
+X2-POLICY,Frozen deterministic workflow policy (quality gate + routing),decision,metrics/X2/X2_POLICY.json,DECLARED_FROZEN,accepted,done,validation-only routing rules; T=1.25; SHA-256 recorded in metrics/X2/X2_CHECKSUMS.json
+X2-FINAL,Single locked-APTOS-test workflow evaluation (frozen model+T+policy),locked_test,metrics/X2/x2_final_locked_test.json,EXECUTED,accepted,done,QWK 0.9027; sens 0.9192 spec 0.9333; 0 missed referable; evaluated exactly once
+X2-ABLATION,Ablation A/B/C/D: workflow routing safety vs coverage,validation,metrics/X2/X2_ABLATION.csv,EXECUTED,accepted,done,"validation n=733 only, locked test not used; C/D convert 20 missed-referable -> 0; auto-screen 0.576->0.336; grading constant by construction"
+X2-MATLAB-ONNX-PARITY,PyTorch->ONNX->MATLAB parity (importNetworkFromONNX),integration,matlab/X2/results/x2_f_matlab_onnx_parity.json,EXECUTED,accepted,done,n=4 validation cases; py-onnx max diff <1e-5; matlab-onnx max diff <1e-5; MATLAB screening routes match Python
+X2-SIMULINK,Workflow-aware Simulink queue model LOW/BASE/HIGH + annualized 100k,integration,simulink/X2/X2_SIMULINK_SCENARIOS.csv,EXECUTED,accepted,done,"MODELED capacity only, not observed; routing fractions derived from validation; all scenarios drained; annualized 100k feasible (33.2/hr demand vs 115/hr capacity)"

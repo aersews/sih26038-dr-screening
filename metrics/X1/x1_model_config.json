@@ -1,0 +1,38 @@
+{
+  "candidate": "X1C2",
+  "backbone": "efficientnet_b3",
+  "img_size": 300,
+  "batch": 8,
+  "epochs": 20,
+  "lr": 0.0002,
+  "weight_decay": 0.0001,
+  "ordinal_weight": 0.5,
+  "ref_weight": 0.6,
+  "patience": 5,
+  "seed": 42,
+  "loss": {
+    "class_weights": [
+      0.6369653353298114,
+      1.4068686076813568,
+      0.8557647651856982,
+      2.3456453640550703,
+      2.048267836476349
+    ],
+    "ordinal_pos": [
+      0.9721723518850988,
+      1.4630044843049328,
+      6.523972602739726,
+      10.0
+    ],
+    "ref_pos": [
+      1.4630044843049328
+    ]
+  },
+  "augmentation": "HFlip0.5 + Rot10 + ColorJitter(0.08,0.08,0.05) [v8.12 contract]",
+  "split_fingerprint": "d6934df52f526795",
+  "parameter_count": 10711602,
+  "best_qwk": 0.9036692196855157,
+  "ckpt": "checkpoints/X1/dr_x1c2_best_X1C2.pt",
+  "ckpt_sha256": "73522dbbe7f476aeb26161b81a0b052236d2261de3222757e2e23951aac6aab4",
+  "elapsed_s": 3812.4
+}

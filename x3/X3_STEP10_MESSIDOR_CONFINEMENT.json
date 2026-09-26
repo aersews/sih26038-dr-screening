@@ -1,0 +1,23 @@
+{
+  "step": "X3_STEP10_MESSIDOR_CONFINEMENT",
+  "date": "2026-09-24",
+  "correction": {
+    "prior_record": "phase7_messidor2_v8_12.json / messidor2_external_status_v8_12.json reported data_present=false",
+    "prior_cause": "checked path data/messidor2 (no hyphen)",
+    "correct_path": "../data/messidor-2",
+    "data_present": true,
+    "image_count": 1744,
+    "csv": "data/messidor-2/messidor_data.csv",
+    "csv_columns": ["id_code", "diagnosis", "adjudicated_dme", "adjudicated_gradable"],
+    "all_gradable": true,
+    "label_provenance": "third_party (not official ADCIS mapping)",
+    "icdr_equivalence_verified": false
+  },
+  "confinement": {
+    "scored_claim": "none derived from Messidor",
+    "evidence_exclusion": "Messidor excluded from locked-test / validation evidence",
+    "required_tag_if_future_probe": "THIRD_PARTY_MESSIDOR2 / PROBE_ONLY",
+    "future_probe_location": "x3/probes/"
+  },
+  "verdict": "NOT_EVALUATED (corrected data presence; no severity claim made)"
+}

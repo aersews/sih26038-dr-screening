@@ -1,0 +1,73 @@
+{
+  "phase": "X2_FINAL_LOCKED_TEST",
+  "n_test": 732,
+  "temperature_frozen": 1.25,
+  "operating_point": "argmax (frozen, X1C2; max-specificity threshold NOT used)",
+  "policy_frozen": "experiments/X2/X2_POLICY.json (validation-only decisions)",
+  "accepted_targets": {
+    "ref_sens_gt_0_90": true,
+    "ref_spec_gt_0_85": true
+  },
+  "classifier": {
+    "qwk_test": 0.9026514473825455,
+    "macro_f1_test": 0.6460144435083068,
+    "balanced_accuracy_test": 0.6466103936110195,
+    "accuracy_test": 0.8114754098360656,
+    "referable_sensitivity_test": 0.9191919191919192,
+    "referable_specificity_test": 0.9333333333333333,
+    "referable_auc_test": 0.9791787607879563,
+    "log_loss_test": 0.48128196597099304,
+    "confusion_matrix_test": [
+      [
+        351,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        43,
+        29,
+        0,
+        0
+      ],
+      [
+        1,
+        18,
+        158,
+        21,
+        1
+      ],
+      [
+        0,
+        0,
+        14,
+        20,
+        5
+      ],
+      [
+        0,
+        5,
+        13,
+        19,
+        22
+      ]
+    ]
+  },
+  "workflow_policy_on_test": {
+    "route_counts": {
+      "RECAPTURE": 0,
+      "HUMAN_REVIEW": 161,
+      "SCREENING_OUTPUT": 269,
+      "REFER": 302
+    },
+    "coverage_fraction_screen_output": 0.3675,
+    "human_review_fraction": 0.2199,
+    "refer_fraction": 0.4126,
+    "missed_referable_auto_screened": 0,
+    "missed_referable_ids": [],
+    "safety_sensitivity_workflow": 1.0,
+    "referable_reviewed_or_referred_fraction": 1.0
+  }
+}

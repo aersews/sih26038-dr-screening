@@ -1,0 +1,25 @@
+========================================================================
+AI-ASSISTED DR SCREENING REPORT  (engine-generated; NOT a diagnostic report)
+========================================================================
+Generated (UTC):   2026-09-24 06:11:49
+Image ID:          0083ee8054ee
+Image quality:     0.678  [ACCEPT]  (heuristic engineering index)
+DR grade (AI):     Proliferative DR  (X1C2, efficientnet-b3, PyTorch-trained)
+Referable:         YES
+Confidence:        0.416  (uncertainty 0.820)
+Referable prob:    0.882
+Evidence image:    explainability/X2/X2_EXPLAINABILITY_CASES/case2_referable_good_quality.png
+
+Evidence / Grad-CAM:
+   Referable-logit Grad-CAM overlaid on the preprocessed fundus. APTOS has no lesion
+   ground-truth masks, so overlays show CLASSIFIER ATTENTION only; no lesion annotation
+   is asserted and no lesion overlays are fabricated.
+
+Reason for referral route: Referable DR (prob 0.882): routed for human review / ophthalmology referral.
+Human-review recommendation:
+   YES - route to ophthalmologist / review queue per workflow policy.
+
+Scope: research-grade screening decision-support. The model is NOT clinically validated;
+final disposition is the clinician's responsibility. This is an AI-assisted screening
+report, not a diagnostic report.
+========================================================================

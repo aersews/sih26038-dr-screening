@@ -1,0 +1,1138 @@
+{
+ "phase": "x3_step4_idrid_a_classical_lesion_prototype",
+ "version": "v9_0",
+ "execution_status": "EXECUTED_PROTOTYPE_EXPERIMENTAL",
+ "method": "classical color+morphology candidate detector, NO training; per-image Otsu threshold on fundus-masked morphological (top-hat / black-top-hat) green-channel response",
+ "dataset": "IDRiD A official TEST split 27 images (IDRiD_55..81) + official masks",
+ "per_image": {
+  "EX": [
+   {
+    "stem": "IDRiD_55",
+    "gt_pixels": 28391,
+    "dice": 0.5318068595516382,
+    "iou": 0.36221859706362153,
+    "comp_recall": 0.25787965616045844,
+    "comp_precision": 0.771551724137931,
+    "gt_components": 349,
+    "pred_components": 232
+   },
+   {
+    "stem": "IDRiD_56",
+    "gt_pixels": 763,
+    "dice": 0.013089295618413755,
+    "iou": 0.006587762393925859,
+    "comp_recall": 0.7666666666666667,
+    "comp_precision": 0.01144578313253012,
+    "gt_components": 30,
+    "pred_components": 1660
+   },
+   {
+    "stem": "IDRiD_57",
+    "gt_pixels": 2475,
+    "dice": 0.032055699238431046,
+    "iou": 0.016288926076833528,
+    "comp_recall": 0.7899159663865546,
+    "comp_precision": 0.04308252427184466,
+    "gt_components": 119,
+    "pred_components": 1648
+   },
+   {
+    "stem": "IDRiD_58",
+    "gt_pixels": 3963,
+    "dice": 0.07332279397029681,
+    "iou": 0.03805660529995724,
+    "comp_recall": 0.9166666666666666,
+    "comp_precision": 0.026463963963963964,
+    "gt_components": 60,
+    "pred_components": 1776
+   },
+   {
+    "stem": "IDRiD_59",
+    "gt_pixels": 5097,
+    "dice": 0.07591477733657828,
+    "iou": 0.03945499733712054,
+    "comp_recall": 0.9655172413793104,
+    "comp_precision": 0.043202764976958526,
+    "gt_components": 116,
+    "pred_components": 1736
+   },
+   {
+    "stem": "IDRiD_60",
+    "gt_pixels": 2999,
+    "dice": 0.04975044276284012,
+    "iou": 0.025509782877899775,
+    "comp_recall": 0.8711656441717791,
+    "comp_precision": 0.046282619399310686,
+    "gt_components": 163,
+    "pred_components": 2031
+   },
+   {
+    "stem": "IDRiD_61",
+    "gt_pixels": 1871,
+    "dice": 0.030351592329285738,
+    "iou": 0.015409649870039097,
+    "comp_recall": 0.890625,
+    "comp_precision": 0.03315994798439532,
+    "gt_components": 64,
+    "pred_components": 1538
+   },
+   {
+    "stem": "IDRiD_62",
+    "gt_pixels": 2534,
+    "dice": 0.03948291946159655,
+    "iou": 0.020139033652669645,
+    "comp_recall": 0.9516129032258065,
+    "comp_precision": 0.02870493991989319,
+    "gt_components": 62,
+    "pred_components": 1498
+   },
+   {
+    "stem": "IDRiD_63",
+    "gt_pixels": 5236,
+    "dice": 0.12452623049376585,
+    "iou": 0.066397212543554,
+    "comp_recall": 0.9811320754716981,
+    "comp_precision": 0.033073929961089495,
+    "gt_components": 53,
+    "pred_components": 1028
+   },
+   {
+    "stem": "IDRiD_64",
+    "gt_pixels": 3879,
+    "dice": 0.06466258251412832,
+    "iou": 0.033411529136934265,
+    "comp_recall": 0.8586956521739131,
+    "comp_precision": 0.04704016913319239,
+    "gt_components": 184,
+    "pred_components": 1892
+   },
+   {
+    "stem": "IDRiD_65",
+    "gt_pixels": 3994,
+    "dice": 0.06471710821733273,
+    "iou": 0.0334406450303083,
+    "comp_recall": 0.8888888888888888,
+    "comp_precision": 0.052917232021709636,
+    "gt_components": 117,
+    "pred_components": 1474
+   },
+   {
+    "stem": "IDRiD_66",
+    "gt_pixels": 52214,
+    "dice": 0.6301758231286034,
+    "iou": 0.4600413934640068,
+    "comp_recall": 0.375,
+    "comp_precision": 0.7285318559556787,
+    "gt_components": 352,
+    "pred_components": 361
+   },
+   {
+    "stem": "IDRiD_67",
+    "gt_pixels": 1823,
+    "dice": 0.038267569460658415,
+    "iou": 0.019507028004903535,
+    "comp_recall": 0.9743589743589743,
+    "comp_precision": 0.020093770931011386,
+    "gt_components": 39,
+    "pred_components": 1493
+   },
+   {
+    "stem": "IDRiD_68",
+    "gt_pixels": 1067,
+    "dice": 0.01896648871656273,
+    "iou": 0.009574037293430263,
+    "comp_recall": 0.9333333333333333,
+    "comp_precision": 0.00630119722747322,
+    "gt_components": 15,
+    "pred_components": 1587
+   },
+   {
+    "stem": "IDRiD_69",
+    "gt_pixels": 3279,
+    "dice": 0.05324481140503484,
+    "iou": 0.027350542953201686,
+    "comp_recall": 0.8688524590163934,
+    "comp_precision": 0.0194954128440367,
+    "gt_components": 61,
+    "pred_components": 1744
+   },
+   {
+    "stem": "IDRiD_70",
+    "gt_pixels": 3548,
+    "dice": 0.04544584157783877,
+    "iou": 0.023251257266017896,
+    "comp_recall": 0.9523809523809523,
+    "comp_precision": 0.016711229946524065,
+    "gt_components": 21,
+    "pred_components": 1496
+   },
+   {
+    "stem": "IDRiD_71",
+    "gt_pixels": 16050,
+    "dice": 0.3254710023466309,
+    "iou": 0.19436570092410194,
+    "comp_recall": 0.7379679144385026,
+    "comp_precision": 0.24975984630163303,
+    "gt_components": 374,
+    "pred_components": 1041
+   },
+   {
+    "stem": "IDRiD_72",
+    "gt_pixels": 9398,
+    "dice": 0.2031375544988738,
+    "iou": 0.11305125498475252,
+    "comp_recall": 0.8367346938775511,
+    "comp_precision": 0.10448859455481972,
+    "gt_components": 196,
+    "pred_components": 1359
+   },
+   {
+    "stem": "IDRiD_73",
+    "gt_pixels": 623,
+    "dice": 0.010401770847616995,
+    "iou": 0.005228076048322782,
+    "comp_recall": 0.9523809523809523,
+    "comp_precision": 0.014035087719298246,
+    "gt_components": 21,
+    "pred_components": 1425
+   },
+   {
+    "stem": "IDRiD_74",
+    "gt_pixels": 1473,
+    "dice": 0.025436103215738727,
+    "iou": 0.012881884074333326,
+    "comp_recall": 0.7297297297297297,
+    "comp_precision": 0.03647798742138365,
+    "gt_components": 111,
+    "pred_components": 1590
+   },
+   {
+    "stem": "IDRiD_75",
+    "gt_pixels": 1158,
+    "dice": 0.01714851049796636,
+    "iou": 0.008648408914513805,
+    "comp_recall": 0.7538461538461538,
+    "comp_precision": 0.017453798767967144,
+    "gt_components": 65,
+    "pred_components": 1948
+   },
+   {
+    "stem": "IDRiD_76",
+    "gt_pixels": 4060,
+    "dice": 0.06959872362202355,
+    "iou": 0.036054018650781276,
+    "comp_recall": 0.8444444444444444,
+    "comp_precision": 0.03443794671864847,
+    "gt_components": 90,
+    "pred_components": 1539
+   },
+   {
+    "stem": "IDRiD_77",
+    "gt_pixels": 5665,
+    "dice": 0.07394716371764196,
+    "iou": 0.038393112756124496,
+    "comp_recall": 0.6711409395973155,
+    "comp_precision": 0.07922272047832586,
+    "gt_components": 298,
+    "pred_components": 2007
+   },
+   {
+    "stem": "IDRiD_78",
+    "gt_pixels": 5396,
+    "dice": 0.10524055953537773,
+    "iou": 0.05554296618760809,
+    "comp_recall": 0.8520710059171598,
+    "comp_precision": 0.044906900328587074,
+    "gt_components": 169,
+    "pred_components": 1826
+   },
+   {
+    "stem": "IDRiD_79",
+    "gt_pixels": 18655,
+    "dice": 0.5182200798589878,
+    "iou": 0.34972810254418335,
+    "comp_recall": 0.1385390428211587,
+    "comp_precision": 0.8173913043478261,
+    "gt_components": 397,
+    "pred_components": 115
+   },
+   {
+    "stem": "IDRiD_80",
+    "gt_pixels": 399,
+    "dice": 0.004608365484720436,
+    "iou": 0.0023095042622246435,
+    "comp_recall": 0.9444444444444444,
+    "comp_precision": 0.006252605252188412,
+    "gt_components": 18,
+    "pred_components": 2399
+   },
+   {
+    "stem": "IDRiD_81",
+    "gt_pixels": 0,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 1,
+    "pred_components": 112
+   }
+  ],
+  "HE": [
+   {
+    "stem": "IDRiD_55",
+    "gt_pixels": 5831,
+    "dice": 0.02248684785292386,
+    "iou": 0.011371276003150152,
+    "comp_recall": 0.8181818181818182,
+    "comp_precision": 0.058823529411764705,
+    "gt_components": 11,
+    "pred_components": 374
+   },
+   {
+    "stem": "IDRiD_56",
+    "gt_pixels": 11637,
+    "dice": 0.12505513472049093,
+    "iou": 0.06669803311888227,
+    "comp_recall": 0.9545454545454546,
+    "comp_precision": 0.03409090909090909,
+    "gt_components": 22,
+    "pred_components": 1584
+   },
+   {
+    "stem": "IDRiD_57",
+    "gt_pixels": 157,
+    "dice": 0.0014222911817946729,
+    "iou": 0.000711651678851006,
+    "comp_recall": 0.4,
+    "comp_precision": 0.0022222222222222222,
+    "gt_components": 5,
+    "pred_components": 900
+   },
+   {
+    "stem": "IDRiD_58",
+    "gt_pixels": 4586,
+    "dice": 0.06950467232639101,
+    "iou": 0.03600354340673247,
+    "comp_recall": 0.9333333333333333,
+    "comp_precision": 0.011522134627046696,
+    "gt_components": 15,
+    "pred_components": 1649
+   },
+   {
+    "stem": "IDRiD_59",
+    "gt_pixels": 4121,
+    "dice": 0.07364943895322683,
+    "iou": 0.03823262517348137,
+    "comp_recall": 0.9411764705882353,
+    "comp_precision": 0.013501350135013501,
+    "gt_components": 17,
+    "pred_components": 1111
+   },
+   {
+    "stem": "IDRiD_60",
+    "gt_pixels": 2257,
+    "dice": 0.0382581746222869,
+    "iou": 0.019502145556243463,
+    "comp_recall": 0.9333333333333333,
+    "comp_precision": 0.011189634864546525,
+    "gt_components": 15,
+    "pred_components": 1698
+   },
+   {
+    "stem": "IDRiD_61",
+    "gt_pixels": 67604,
+    "dice": 0.39828527864222063,
+    "iou": 0.24866180808065044,
+    "comp_recall": 0.9245283018867925,
+    "comp_precision": 0.1742957746478873,
+    "gt_components": 53,
+    "pred_components": 1136
+   },
+   {
+    "stem": "IDRiD_62",
+    "gt_pixels": 620,
+    "dice": 0.009900990099009901,
+    "iou": 0.004975124378109453,
+    "comp_recall": 0.3333333333333333,
+    "comp_precision": 0.004081632653061225,
+    "gt_components": 3,
+    "pred_components": 490
+   },
+   {
+    "stem": "IDRiD_63",
+    "gt_pixels": 725,
+    "dice": 0.0026901138316686177,
+    "iou": 0.001346868530666201,
+    "comp_recall": 0.5,
+    "comp_precision": 0.008287292817679558,
+    "gt_components": 6,
+    "pred_components": 362
+   },
+   {
+    "stem": "IDRiD_64",
+    "gt_pixels": 1346,
+    "dice": 0.01320778226739529,
+    "iou": 0.00664779243119266,
+    "comp_recall": 0.8888888888888888,
+    "comp_precision": 0.017391304347826087,
+    "gt_components": 9,
+    "pred_components": 690
+   },
+   {
+    "stem": "IDRiD_65",
+    "gt_pixels": 2390,
+    "dice": 0.05012575177692728,
+    "iou": 0.025707171538168195,
+    "comp_recall": 0.7083333333333334,
+    "comp_precision": 0.0437375745526839,
+    "gt_components": 24,
+    "pred_components": 503
+   },
+   {
+    "stem": "IDRiD_66",
+    "gt_pixels": 1377,
+    "dice": 0.0031891761294998793,
+    "iou": 0.0015971348368986546,
+    "comp_recall": 0.4444444444444444,
+    "comp_precision": 0.010121457489878543,
+    "gt_components": 9,
+    "pred_components": 494
+   },
+   {
+    "stem": "IDRiD_67",
+    "gt_pixels": 18833,
+    "dice": 0.16767387806186304,
+    "iou": 0.09150875275658164,
+    "comp_recall": 0.9736842105263158,
+    "comp_precision": 0.04923325262308313,
+    "gt_components": 38,
+    "pred_components": 1239
+   },
+   {
+    "stem": "IDRiD_68",
+    "gt_pixels": 16879,
+    "dice": 0.2236196592632236,
+    "iou": 0.12588501129801657,
+    "comp_recall": 0.9666666666666667,
+    "comp_precision": 0.05268292682926829,
+    "gt_components": 30,
+    "pred_components": 1025
+   },
+   {
+    "stem": "IDRiD_69",
+    "gt_pixels": 16726,
+    "dice": 0.18679749710135207,
+    "iou": 0.1030207584661565,
+    "comp_recall": 0.9807692307692307,
+    "comp_precision": 0.049429657794676805,
+    "gt_components": 52,
+    "pred_components": 1315
+   },
+   {
+    "stem": "IDRiD_70",
+    "gt_pixels": 5837,
+    "dice": 0.13068999889245764,
+    "iou": 0.06991349685981751,
+    "comp_recall": 0.9565217391304348,
+    "comp_precision": 0.054878048780487805,
+    "gt_components": 23,
+    "pred_components": 492
+   },
+   {
+    "stem": "IDRiD_71",
+    "gt_pixels": 2899,
+    "dice": 0.03088322711751939,
+    "iou": 0.015683796686324067,
+    "comp_recall": 0.7058823529411765,
+    "comp_precision": 0.036684782608695655,
+    "gt_components": 17,
+    "pred_components": 736
+   },
+   {
+    "stem": "IDRiD_72",
+    "gt_pixels": 482,
+    "dice": 0.007907310445892931,
+    "iou": 0.003969348659003832,
+    "comp_recall": 0.875,
+    "comp_precision": 0.008871989860583017,
+    "gt_components": 8,
+    "pred_components": 789
+   },
+   {
+    "stem": "IDRiD_73",
+    "gt_pixels": 1477,
+    "dice": 0.03223030867959703,
+    "iou": 0.01637910616357243,
+    "comp_recall": 0.8888888888888888,
+    "comp_precision": 0.01620745542949757,
+    "gt_components": 9,
+    "pred_components": 617
+   },
+   {
+    "stem": "IDRiD_74",
+    "gt_pixels": 5795,
+    "dice": 0.07819843342036553,
+    "iou": 0.040690170504721145,
+    "comp_recall": 0.9090909090909091,
+    "comp_precision": 0.07894736842105263,
+    "gt_components": 44,
+    "pred_components": 684
+   },
+   {
+    "stem": "IDRiD_75",
+    "gt_pixels": 8282,
+    "dice": 0.09515595132640216,
+    "iou": 0.049954720121399024,
+    "comp_recall": 0.96875,
+    "comp_precision": 0.042173560421735604,
+    "gt_components": 32,
+    "pred_components": 1233
+   },
+   {
+    "stem": "IDRiD_76",
+    "gt_pixels": 4623,
+    "dice": 0.07478536300741852,
+    "iou": 0.038845207994181015,
+    "comp_recall": 0.90625,
+    "comp_precision": 0.06615384615384616,
+    "gt_components": 32,
+    "pred_components": 650
+   },
+   {
+    "stem": "IDRiD_77",
+    "gt_pixels": 2149,
+    "dice": 0.03319634521007062,
+    "iou": 0.016878321905302876,
+    "comp_recall": 0.8947368421052632,
+    "comp_precision": 0.044096728307254626,
+    "gt_components": 19,
+    "pred_components": 703
+   },
+   {
+    "stem": "IDRiD_78",
+    "gt_pixels": 3668,
+    "dice": 0.06473685143495293,
+    "iou": 0.03345118801179768,
+    "comp_recall": 0.8333333333333334,
+    "comp_precision": 0.02981651376146789,
+    "gt_components": 18,
+    "pred_components": 872
+   },
+   {
+    "stem": "IDRiD_79",
+    "gt_pixels": 6482,
+    "dice": 0.09757820195899856,
+    "iou": 0.05129157059674079,
+    "comp_recall": 0.71875,
+    "comp_precision": 0.0670391061452514,
+    "gt_components": 32,
+    "pred_components": 537
+   },
+   {
+    "stem": "IDRiD_80",
+    "gt_pixels": 986,
+    "dice": 0.016514985093362623,
+    "iou": 0.008326246464806281,
+    "comp_recall": 0.5,
+    "comp_precision": 0.0035335689045936395,
+    "gt_components": 2,
+    "pred_components": 1415
+   },
+   {
+    "stem": "IDRiD_81",
+    "gt_pixels": 2631,
+    "dice": 0.015630700693204293,
+    "iou": 0.007876911167021482,
+    "comp_recall": 0.6428571428571429,
+    "comp_precision": 0.01938610662358643,
+    "gt_components": 14,
+    "pred_components": 619
+   }
+  ],
+  "MA": [
+   {
+    "stem": "IDRiD_55",
+    "gt_pixels": 580,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 34,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_56",
+    "gt_pixels": 614,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 22,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_57",
+    "gt_pixels": 120,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 11,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_58",
+    "gt_pixels": 424,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 23,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_59",
+    "gt_pixels": 648,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 34,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_60",
+    "gt_pixels": 574,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 35,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_61",
+    "gt_pixels": 1058,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 30,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_62",
+    "gt_pixels": 183,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 12,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_63",
+    "gt_pixels": 123,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 4,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_64",
+    "gt_pixels": 715,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 40,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_65",
+    "gt_pixels": 954,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 68,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_66",
+    "gt_pixels": 539,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 50,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_67",
+    "gt_pixels": 760,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 31,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_68",
+    "gt_pixels": 420,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 16,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_69",
+    "gt_pixels": 605,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 44,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_70",
+    "gt_pixels": 489,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 18,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_71",
+    "gt_pixels": 1205,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 60,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_72",
+    "gt_pixels": 477,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 39,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_73",
+    "gt_pixels": 604,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 32,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_74",
+    "gt_pixels": 983,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 78,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_75",
+    "gt_pixels": 1447,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 96,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_76",
+    "gt_pixels": 1440,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 75,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_77",
+    "gt_pixels": 750,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 66,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_78",
+    "gt_pixels": 809,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 58,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_79",
+    "gt_pixels": 1213,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 80,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_80",
+    "gt_pixels": 39,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 5,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_81",
+    "gt_pixels": 694,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 48,
+    "pred_components": 0
+   }
+  ],
+  "SE": [
+   {
+    "stem": "IDRiD_55",
+    "gt_pixels": 160,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 3,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_56",
+    "gt_pixels": 3338,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 5,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_57",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_58",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_59",
+    "gt_pixels": 9990,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 6,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_60",
+    "gt_pixels": 4539,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 7,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_61",
+    "gt_pixels": 1011,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 2,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_62",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_63",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_64",
+    "gt_pixels": 2298,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 3,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_65",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_66",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_67",
+    "gt_pixels": 2166,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 5,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_68",
+    "gt_pixels": 3924,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 5,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_69",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_70",
+    "gt_pixels": 1244,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 2,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_71",
+    "gt_pixels": 1037,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 2,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_72",
+    "gt_pixels": 923,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 2,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_73",
+    "gt_pixels": 1807,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 4,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_74",
+    "gt_pixels": 665,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 3,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_75",
+    "gt_pixels": 800,
+    "dice": 0.0,
+    "iou": 0.0,
+    "comp_recall": 0.0,
+    "comp_precision": 0.0,
+    "gt_components": 3,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_76",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_77",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_78",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_79",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_80",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   },
+   {
+    "stem": "IDRiD_81",
+    "gt_pixels": 0,
+    "dice": 1.0,
+    "iou": 1.0,
+    "comp_recall": 1.0,
+    "comp_precision": 1.0,
+    "gt_components": 1,
+    "pred_components": 0
+   }
+  ]
+ },
+ "summary": [
+  {
+   "cls": "EX",
+   "n_images": 27,
+   "n_with_lesion": 26,
+   "dice_mean_lesion_images": 0.1246,
+   "comp_recall_mean_lesion_images": 0.7963,
+   "comp_precision_mean_lesion_images": 0.1282,
+   "not_attempted_classically": false
+  },
+  {
+   "cls": "HE",
+   "n_images": 27,
+   "n_with_lesion": 27,
+   "dice_mean_lesion_images": 0.0764,
+   "comp_recall_mean_lesion_images": 0.7963,
+   "comp_precision_mean_lesion_images": 0.0373,
+   "not_attempted_classically": false
+  },
+  {
+   "cls": "MA",
+   "n_images": 27,
+   "n_with_lesion": 27,
+   "dice_mean_lesion_images": 0.0,
+   "comp_recall_mean_lesion_images": 0.0,
+   "comp_precision_mean_lesion_images": 0.0,
+   "not_attempted_classically": true
+  },
+  {
+   "cls": "SE",
+   "n_images": 27,
+   "n_with_lesion": 14,
+   "dice_mean_lesion_images": 0.0,
+   "comp_recall_mean_lesion_images": 0.0,
+   "comp_precision_mean_lesion_images": 0.0,
+   "not_attempted_classically": true
+  }
+ ],
+ "scope": "PROTOTYPE: candidate highlighting for demo; NOT a clinical segmentation claim. MA/SE not attempted classically (hard with these rules); reported as not-attempted.",
+ "threshold_policy": "Otsu on foreground response (fixed label-free rule; no constant threshold, no tuning on this test split)",
+ "executed_at": "24-Sep-2026"
+}

@@ -1,0 +1,42 @@
+{
+  "operating_point": "X1C2 argmax (reference; X1-accepted; NOT test-tuned)",
+  "temperature": 1.25,
+  "validation": {
+    "n": 733,
+    "route_distribution": {
+      "RECAPTURE": 0,
+      "HUMAN_REVIEW": 176,
+      "SCREENING_OUTPUT": 246,
+      "REFER": 311
+    },
+    "referable_argmax_sensitivity": 0.9329,
+    "referable_argmax_specificity": 0.9241,
+    "screen_output_fraction": 0.3356,
+    "human_review_fraction": 0.2401,
+    "recapture_fraction": 0.0,
+    "refer_fraction": 0.4243,
+    "coverage_fraction": 0.3356,
+    "true_ref_in_refer_path": 278,
+    "true_ref_auto_screened_out_missed": 0,
+    "true_ref_auto_screened_out_fraction": 0.0,
+    "screening_output_safety_sensitivity": 1.0,
+    "self_report": "coverage = screening_output images / n; screening outputs are non-referable+usable+confident"
+  },
+  "policy_definition": {
+    "type": "DETERMINISTIC_RULE_BASED (no learned fusion)",
+    "rules_predeclared_before_test": true,
+    "Q_RECAPTURE": 0.35,
+    "Q_USABLE": 0.6,
+    "CONF_HIGH": 0.9,
+    "UNC_HIGH": 0.5,
+    "routing": [
+      "if quality < 0.35 -> RECAPTURE",
+      "elif referable probability (X1C2 argmax >= 2) -> REFER (human review / referral)",
+      "elif predicted class == Mild NPDR (argmax = 1) -> HUMAN_REVIEW (referable-boundary safety guard)",
+      "elif quality < 0.60 -> HUMAN_REVIEW",
+      "elif confidence < 0.90 or normalized_entropy > 0.50 -> HUMAN_REVIEW",
+      "else -> SCREENING_OUTPUT (non-referable + usable + confident)"
+    ]
+  },
+  "quality_gate_status": "HEURISTIC engineering index (focus/illumination/FOV/uniformity/motion proxy); not clinically validated"
+}

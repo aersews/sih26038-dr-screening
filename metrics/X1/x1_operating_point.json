@@ -1,0 +1,16 @@
+{
+  "fit_split": "validation_only",
+  "candidate": "X1C2",
+  "rule": "among validation thresholds with sens>=0.90 and spec>=0.85, maximize specificity; tie-break smaller threshold",
+  "threshold": 0.6443473697,
+  "validation_metrics": {
+    "sens": 0.9026845637583892,
+    "spec": 0.9425287356321839,
+    "tp": 269.0,
+    "fn": 29.0,
+    "tn": 410.0,
+    "fp": 25.0
+  },
+  "temperature": 1.25,
+  "distinct_from_v812_referral_policy": "v8.12 referral-policy T=0.78104581 is a 0.55*ref_prob+0.20*entropy+0.25*(1-quality) risk score and is NOT this classifier probability threshold"
+}

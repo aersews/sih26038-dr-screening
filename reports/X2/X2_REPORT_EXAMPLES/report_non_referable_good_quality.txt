@@ -1,0 +1,26 @@
+========================================================================
+AI-ASSISTED DR SCREENING REPORT  (engine-generated; NOT a diagnostic report)
+========================================================================
+Generated (UTC):   2026-09-24 06:11:49
+Image ID:          0304bedad8fe
+Image quality:     0.718  [ACCEPT]  (heuristic engineering index)
+DR grade (AI):     No DR  (X1C2, efficientnet-b3, PyTorch-trained)
+Referable:         NO
+Confidence:        0.997  (uncertainty 0.011)
+Referable prob:    0.000
+Evidence image:    explainability/X2/X2_EXPLAINABILITY_CASES/case1_non_referable_good_quality.png
+
+Evidence / Grad-CAM:
+   Referable-logit Grad-CAM overlaid on the preprocessed fundus. APTOS has no lesion
+   ground-truth masks, so overlays show CLASSIFIER ATTENTION only; no lesion annotation
+   is asserted and no lesion overlays are fabricated.
+
+Reason for referral route: Non-referable with usable quality and high confidence: screening output (no referral).
+Human-review recommendation:
+   No human review required by the current workflow policy (non-referable, usable,
+   confident). Programmatic note: quality reference = 0.718.
+
+Scope: research-grade screening decision-support. The model is NOT clinically validated;
+final disposition is the clinician's responsibility. This is an AI-assisted screening
+report, not a diagnostic report.
+========================================================================

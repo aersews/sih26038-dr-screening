@@ -1,0 +1,5 @@
+scenario,acquisition_hr,sim_hours,steps,total_arrivals,auto_screened,human_attention,recaptured,max_human_queue,queue_drained,utilization_vs_capacity,count_unit
+LOW,5,24,1441,120.08333333333333,40.29996666666657,79.78336666666678,0,0,True,0.02891,images_per_24h_simulated_day
+BASE,10,24,1441,240.16666666666666,80.59993333333314,159.56673333333356,0,0,True,0.05781,images_per_24h_simulated_day
+HIGH,40,24,1441,960.6666666666666,322.39973333333256,638.2669333333342,0,0,True,0.23126,images_per_24h_simulated_day
+ANNUALIZED_100k,50,n/a,n/a,100000_per_year,16.78,33.22,0,n/a,modeled,0.28887,images_per_hour_at_50_per_hour_acquisition

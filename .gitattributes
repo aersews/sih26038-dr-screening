@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.m text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+matlab/X2/+dr_x1c2/** -whitespace
+*.slx binary
+*.slxc binary
+*.onnx binary
+*.pt binary
+*.mat binary
+*.pptx binary
+*.pdf binary
+*.png binary

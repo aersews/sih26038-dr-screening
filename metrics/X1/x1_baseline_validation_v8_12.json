@@ -1,0 +1,75 @@
+{
+  "split": "APTOS locked validation (v8.12 freeze)",
+  "fingerprint": "d6934df52f526795",
+  "ckpt": "../sih26038_checkpoints_v8_12/dr_ordinal_best_v8_12.pt",
+  "ckpt_sha256": "27bf28c5866a0e5b8f9e55dab451072be06ddc10dbcf02009810032016ec4b71",
+  "n": 733,
+  "class_counts": {
+    "0": 361,
+    "1": 74,
+    "2": 200,
+    "3": 39,
+    "4": 59
+  },
+  "temperature": 2.1500000000000004,
+  "metrics_raw": {
+    "qwk": 0.9078174563946942,
+    "macro_f1": 0.6820178431820896,
+    "balanced_accuracy": 0.6681669434081754,
+    "accuracy": 0.8335607094133697,
+    "referable_sensitivity": 0.9261744966442953,
+    "referable_specificity": 0.9310344827586207,
+    "referable_auc": 0.977547635578184,
+    "log_loss": 0.6611098051071167,
+    "confusion_matrix": [
+      [
+        358,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        43,
+        28,
+        0,
+        1
+      ],
+      [
+        0,
+        20,
+        163,
+        15,
+        2
+      ],
+      [
+        0,
+        0,
+        14,
+        18,
+        7
+      ],
+      [
+        0,
+        2,
+        20,
+        8,
+        29
+      ]
+    ]
+  },
+  "brier_calibrated": 0.24552250534138265,
+  "referable_operating_point_feasible": true,
+  "referable_operating_point": {
+    "threshold": 0.717199564,
+    "sens": 0.9026845637583892,
+    "spec": 0.9402298850574713,
+    "tp": 269,
+    "fn": 29,
+    "tn": 409,
+    "fp": 26
+  },
+  "reported_scope": "BASELINE_VALIDATION_ONLY; baseline locked-test numbers taken from frozen final_test_report_v8_12.json",
+  "elapsed_s": 217.2
+}

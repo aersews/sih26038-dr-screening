@@ -1,0 +1,73 @@
+{
+  "project": "SIH26038",
+  "branch": "v9.0",
+  "generated": "2026-09-24",
+  "rule": "v8.12 baseline frozen; no modifications/retraining/contamination. Messidor labels are third-party provenance (NOT official ADCIS). FGADR dropped for sprint.",
+  "datasets": [
+    {
+      "id": "APTOS",
+      "path": "data/aptos",
+      "role": "primary_DR_grading",
+      "status": "AVAILABLE",
+      "images": {"train": 3662, "test": 1928},
+      "labels": {
+        "train_csv": "train.csv (id_code, diagnosis 0-4)",
+        "test_csv": "test.csv (id_code only; labels NOT available locally)"
+      },
+      "classes": [0, 1, 2, 3, 4],
+      "provenance": "APTOS 2019 Blindness Detection (SIH-attached)",
+      "split_policy": "locked internal train/val split (locked_split_ids_v8_12.json); locked test used FINAL single-shot only, never for tuning",
+      "used_in": "training backbone, grading head, external-shift probes"
+    },
+    {
+      "id": "IDRiD",
+      "path": "data/idrid",
+      "role": "segmentation_grading_localization_external",
+      "status": "AVAILABLE",
+      "packages": {
+        "A_segmentation": {"original": 81, "official_split": "54 train / 27 test", "gt": ["MA", "HE", "EX", "SE", "OD"]},
+        "B_grading": {"images": 516, "official_split": "413 train / 103 test", "labels": ["DR severity 0-4", "DME"]},
+        "C_localization": {"images": 516, "labels": ["OD center", "fovea center"]}
+      },
+      "provenance": "official IDRiD challenge release",
+      "status_notes": "OD Dice 0.897; lesion MA/EX/HE/SE ~0 (HONEST NEGATIVE); localization median error ~1014-1073px; DME labels present but no v8.12 DME model",
+      "used_in": "workflow awareness experiment (X2), honest-negative fault trace, optional DME route"
+    },
+    {
+      "id": "DRIVE",
+      "path": "data/DRIVE",
+      "role": "vessel_segmentation",
+      "status": "AVAILABLE",
+      "images": {"official_test": 20, "training": 20, "masks": "gold standard"},
+      "provenance": "DRIVE challenge (official)",
+      "metrics": "FOV-masked dev Dice 0.683 (n=4 held-out); official test NOT locally scored (challenge-held)",
+      "used_in": "vessel segmentation evidence, preprocessing parity check"
+    },
+    {
+      "id": "MESSIDOR2",
+      "path": "data/messidor-2",
+      "role": "robustness_external_sanity_THIRD_PARTY_LABELS",
+      "status": "AVAILABLE_with_caution",
+      "labels_file": "messidor_data.csv",
+      "rows": 1744,
+      "image_files": {"png": 1057, "jpg": 687, "total": 1744},
+      "image_size": "512x512 RGB (all)",
+      "distributions": {
+        "diagnosis": {"0": 1017, "1": 270, "2": 347, "3": 75, "4": 35, "total": 1744},
+        "adjudicated_dme": {"0": 1593, "1": 151, "total": 1744},
+        "adjudicated_gradable": {"1": 1744}
+      },
+      "provenance": "THIRD-PARTY Kaggle mirror (google-brain/xyaustin-style adjudicated labels); NOT the official ADCIS release (official = 1748 images, no official severity labels)",
+      "defensibility": "LOWER - third-party labels; cannot be primary clinical validation claim",
+      "used_in": "robustness transfer probe (X3), preprocessing parity check; severity-based claims labeled third-party"
+    },
+    {
+      "id": "FGADR",
+      "role": "none",
+      "status": "NOT_NEEDED",
+      "reason": "dropped for this sprint; no authorized access",
+      "used_in": "none"
+    }
+  ],
+  "note_on_messidor": "CSV in data/messidor-2/messidor_data.csv EXACTLY matches structure of the public third-party MESSIDOR-2 DR-grades collation (image_id, adjudicated_dr_grade, adjudicated_dme, adjudicated_gradable). Official MESSIDOR-2 ground truth is NOT distributed as images+labels. Treat any grading claim from this set as THIRD-PARTY_LABELED."
+}

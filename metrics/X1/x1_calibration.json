@@ -1,0 +1,5 @@
+{
+  "fit_split": "validation_only",
+  "temperature": 1.25,
+  "val_brier": 0.25443702436248977
+}

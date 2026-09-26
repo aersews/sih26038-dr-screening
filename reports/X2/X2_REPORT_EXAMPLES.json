@@ -1,0 +1,11 @@
+{
+  "count": 4,
+  "files": [
+    "reports/X2/X2_REPORT_EXAMPLES/report_non_referable_good_quality.txt",
+    "reports/X2/X2_REPORT_EXAMPLES/report_referable_good_quality.txt",
+    "reports/X2/X2_REPORT_EXAMPLES/report_low_quality_review.txt",
+    "reports/X2/X2_REPORT_EXAMPLES/report_uncertain_review.txt"
+  ],
+  "label": "AI-assisted screening report (not a diagnostic report)",
+  "note": "Machine-produced AI-assisted screening report; explicitly not a diagnostic report."
+}

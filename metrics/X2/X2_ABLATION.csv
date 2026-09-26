@@ -1,0 +1,5 @@
+arm,components,auto_screen_fraction,human_attention_fraction,human_review_fraction,recapture_fraction,refer_fraction,missed_referable_not_routed_to_human,missed_referable_fraction,safety_sensitivity
+A_X1C2_only,X1C2 argmax,0.5757,0.4243,0.0,0.0,0.4243,20,0.0671,0.9329
+B_X1C2_quality_gate,X1C2 argmax + quality gate (q<0.60),0.4802,0.5198,0.5198,0.1078,0.4243,20,0.0671,0.9329
+C_X1C2_workflow,X1C2 argmax + workflow routing (refer/Mild-boundary/confidence),0.3356,0.6644,0.2401,0.0,0.4243,0,0.0,1.0
+D_full_pipeline,X1C2 argmax + quality gate + workflow + report/explainability artifact,0.3356,0.6644,0.2401,0.0,0.4243,0,0.0,1.0
